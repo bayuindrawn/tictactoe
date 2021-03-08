@@ -1,110 +1,76 @@
-
 body {
-	background-color: #eee;
+	margin: 0 auto;
+	font-family: Arial;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+a {
+   outline: 0;
 }
 
 h2 {
 	color: green;
 }
 
+.submit-button {
+	margin-top: 20px;
+	width: 280px;
+}
+.game-area {
+	margin:0 auto;
+	text-align: center;
+	padding-top: 20px; 
+}
+
+.game-options {
+	border-bottom: 1px dashed #CFCFCF;
+	padding-bottom: 20px;
+}
+.game-options select, .game-options input  {
+	border: 4px solid #333;
+	padding: 10px;
+	margin-right: 10px;
+	outline: none;
+}
+.game-board {
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.grid-box, .green-player, .red-player {
+	font-size: 35px;
+	padding: 15px 25px;
+	width: 80px;
+	height: 80px;
+	margin:0px;
+	background-color: #a8a6a6;
+	outline: none;
+	border-color: black;
+}
+.green-player {
+	background-color: yellowgreen;
+	color: #FFF;
+}
+.red-player {
+	background-color: violet;
+	color: #FFF;
+}
+
+.score-card {
+	font-weight: bold;
+	line-height: 25px;
+}
+.score-card span {
+	font-weight: normal;
+}
+
 table.scoreboard tr td {
 	text-align: center;
 	min-width: 100px;
-	color: green;
+	color: rgb(56, 62, 63);
 	font-weight: bold;
-}
-
-table.board {
-	background: green;
-	background: -webkit-linear-gradient(green, yellowgreen);
-	background: -o-linear-gradient(green, yellowgreen);
-	background: -moz-linear-gradient(green, yellowgreen);
-	background: linear-gradient(green, yellowgreen);
-	border-radius: 5px;
-}
-
-table.board tr td {
-	background-repeat: no-repeat;
-	text-align: center;
-	height: 100px; 
-	width: 100px;
-	cursor: pointer;
-	font-size: 0;
-	border: 1px solid #aab9ff;
-	border-radius: 5px;
-}
-
-.hiddenMessages {
-	background: green; 
-	background: -webkit-linear-gradient(green, yellowgreen); 
-	background: -o-linear-gradient(green, yellowgreen); 
-	background: -moz-linear-gradient(green, yellowgreen); 
-	background: linear-gradient(green, yellowgreen); 
-	color: white;
-	border: 0px solid white;
-	border-radius: 5px;
-	margin: 5px;
-	padding: 5px;
-	display: none;
-	font-size: 18px;
-}
-
-#winnerMessageBox {
-	width: 300px;
-}
-
-#playAgainButton {
-	cursor: pointer;
-	padding: 5px 50px;
-}
-
-#playAgainButton:hover {
-	background: yellowgreen; 
-	background: -webkit-linear-gradient(yellowgreen, green); 
-	background: -o-linear-gradient(yellowgreen, green); 
-	background: -moz-linear-gradient(yellowgreen, green); 
-	background: linear-gradient(yellowgreen, green); 
-}
-
-footer {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	padding-top: 10px;
-}
-
-a {
-	text-decoration: none;
-	color: green;
-}
-
-#difficulty-select {	
-	background: green;
-	background: -webkit-linear-gradient(green, yellowgreen);
-	background: -o-linear-gradient(green, yellowgreen);
-	background: -moz-linear-gradient(green, yellowgreen);
-	background: linear-gradient(green, yellowgreen);
-	color: black;
-	border: 0px solid white;
-	border-radius: 5px;
-	padding: 2px;
-	font-size: 16px;
-}
-
-#difficulty-select option {
-   color: black;
-}
-
-#difficulty-select:not(:checked) {
-   color: white;
-}
-
-#difficulty-label {
-	color: green;
-	font-size: 20px;
-}
-
-#difficulty-block {
-	margin-bottom: 10px;
+	line-height: 25px;
 }
