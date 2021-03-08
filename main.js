@@ -106,7 +106,7 @@ function checkWinner() {
 			
 				disableAllBoxes();
 
-				alert('Player '+turn+' Won !!');
+				winnerMessageBox.innerHTML = 'Player '+turn+' Won !!';
 				
 				break;
 			} 
@@ -115,7 +115,7 @@ function checkWinner() {
 
 
 	if ( ( total_turns == (game_type*game_type) ) && finished === false ) { 
-		alert('Game Draw!');
+		winnerMessageBox.innerHTML = 'Game Draw!';
 		finished = true;
 		disableAllBoxes(); 
 	}
